@@ -46,8 +46,8 @@ The number of adults under 25 with insufficient education for finding employment
 World Bank, 2017
 
 26 years old
-The age at which Albert Einstein published his groundbreaking paper on special relativity
 
+The age at which Albert Einstein published his groundbreaking paper on special relativity
 1885
 Development of the forgetting curve
 
