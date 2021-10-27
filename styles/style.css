@@ -18,7 +18,12 @@ h5,
 p {
   border: 2px dashed orange;
 }
-div {
+a,
+div,
+ul,
+li,
+img,
+footer {
   border: 1px solid red;
 }
 
@@ -44,13 +49,12 @@ div {
 
 .header__title {
   display: flex;
-  align-self: center;
+  align-items: center;
   width: 730px;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
-  z-index: 2;
-  margin: 0px;
+  z-index: 1;
   margin-left: 32px; /*Needs to be fixed!!! Not correct placement.*/
 }
 
@@ -320,31 +324,111 @@ div {
   font-size: 24px;
   font-weight: normal;
   color: white;
-  margin: -20px auto 30px auto;
+  margin: 0 auto;
   text-align: center;
   width: 60%;
 }
 
 .footer {
-  display: flex;
-  flex-wrap: row wrap;
-  padding: 50px;
+  min-height: 350px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+.footer a {
+  color: white;
 }
 
-.footer__column_content_copyright {
+.footer__columns {
+  position: relative;
   display: flex;
-  flex-wrap: row wrap;
-  align-self: flex-start;
+  width: 85%;
+  height: 250px;
+  margin: 60px auto 40px auto;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+.footer__column_content_copyright {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+.footer__author {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  padding: 18px auto;
+}
+
+.logo__place_footer {
+  display: flex;
+  width: 183px;
+  height: 35px;
+  flex-basis: 711px;
+  padding: 0;
+  justify-content: flex-start;
+}
+
+.ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.footer__social {
+  position: absolute;
+  right: 0;
+  width: 12%;
+}
+
+.footer__social-icons {
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  left: 0;
 }
 
 .footer__column_content_about {
-  display: flex;
-  flex-wrap: row wrap;
+  position: absolute;
+  right: 20%;
+  height: 100%;
 }
 
-.footer__list {
-  list-style-type: none;
-  padding-left: 0;
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer__column-link {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  display: flex;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.zero-margin {
+  margin: 0;
+  padding: 0;
+}
+.black-space {
+  color: black;
+}
+
+h4,
+h3,
+h2,
+h1,
+p {
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 /* .footer {
