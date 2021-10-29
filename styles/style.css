@@ -9,7 +9,7 @@
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-/* div,
+div,
 h1,
 h2,
 h3,
@@ -25,7 +25,7 @@ li,
 img,
 footer {
   border: 1px solid red;
-} */
+}
 
 .header {
   height: 100vh;
@@ -55,8 +55,7 @@ footer {
   font-size: 102px;
   font-weight: bold;
   z-index: 1;
-
-  margin-left: 32px; /*Needs to be fixed!!! Not correct placement.*/
+  margin-left: 64px;
 }
 
 .header__subtitle {
@@ -196,7 +195,7 @@ footer {
 }
 
 .feynman__title {
-  width: 769px;
+  width: 775px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
@@ -318,7 +317,7 @@ footer {
 
 .footer {
   background-color: #1f1f1f;
-
+  min-height: 350px;
   margin: auto;
   color: white;
   overflow: hidden;
@@ -326,9 +325,8 @@ footer {
 
 .footer__columns {
   display: flex;
+  min-height: 250px;
   justify-content: space-between;
-  min-height: 350px;
-  width: 90%;
   margin: 60px auto 40px auto;
 }
 
@@ -354,7 +352,7 @@ footer {
 
 .footer__column-link {
   display: flex;
-  margin: 0 0 5% 0;
+  margin: 0px auto;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
@@ -370,54 +368,24 @@ footer {
 
 .footer__list {
   margin: 0;
-  width: 100%;
 }
 
 .footer__column-heading {
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin: auto auto 20px auto;
   padding: 0px;
 }
 
 .footer__social-icon {
-  margin: 8px 8px 0 8px;
+  margin: 8px 8px 0 0px;
   height: 16px;
   width: 16px;
 }
 
 .footer__column_content_social {
   list-style-type: none;
+  padding: 0px;
+  margin: 0px;
 }
-
-/* .footer {
-  background-color: black;
-  color: white;
-  padding-top: 120px;
-  min-height: 350px;
-  display: flex;
-  align-items: flex-end;
-}
-
-.footer__columns {
-  width: 90%;
-  min-height: 350px;
-  background-color: grey;
-  margin: auto auto 30px auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.footer_column_content_copyright {
-  flex-direction: column;
-}
-
-.footer_column-heading_text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  width: 20%;
-}
- */
