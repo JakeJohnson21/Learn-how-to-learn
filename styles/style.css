@@ -9,7 +9,7 @@
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-div,
+/* div,
 h1,
 h2,
 h3,
@@ -25,7 +25,7 @@ li,
 img,
 footer {
   border: 1px solid red;
-}
+} */
 
 .header {
   background-color: #f2f2f2;
@@ -140,8 +140,10 @@ footer {
   font-weight: bold;
   line-height: 69px;
   margin: 20px auto 20px auto;
+  position: relative;
   text-align: center;
   width: 60%;
+  z-index: 1;
 }
 
 .section__subtitle {
@@ -149,8 +151,11 @@ footer {
   font-weight: normal;
   line-height: 34px;
   margin: 0px auto 0px auto;
+  padding-bottom: 0px;
+  position: relative;
   text-align: center;
   width: 60%;
+  z-index: 1;
 }
 
 .table {
@@ -165,15 +170,19 @@ footer {
 .table__cell {
   list-style: none;
   margin-top: 60px;
+  padding: 0px;
   width: 250px;
+  z-index: 1;
 }
 
 .table__heading {
   font-size: 24px;
   font-weight: bold;
   line-height: 1.15px;
+  margin-bottom: 20px;
   margin: 0;
   padding: 10px 0;
+  position: relative;
 }
 
 .table__text {
@@ -181,6 +190,7 @@ footer {
   font-weight: normal;
   line-height: 1.2;
   margin: 20px auto 0 auto;
+  position: relative;
 }
 
 .feynman {
@@ -232,24 +242,13 @@ footer {
 }
 
 /* including elements with key-value modifiers */
-.table__cell_theme_dark {
-  color: white;
-  margin-top: 80px;
-  padding: 0;
-  width: 200px;
-  z-index: 1;
-}
-
+/*section / shape */
 .kaufman {
   background-color: #1f1f1f;
   margin: auto;
   min-height: 750px;
   overflow: hidden;
   position: relative;
-}
-
-.table__theme_dark {
-  list-style-type: none;
 }
 
 .kaufman__triangle {
@@ -262,51 +261,38 @@ footer {
   width: 636px;
   z-index: 0;
 }
+/*Table blocks and elements from Facts and figures
+the modifiers to make the dark theme are below*/
+
+.table__cell_theme_dark {
+  color: white;
+  margin-top: 80px;
+}
+
+.table__theme_dark {
+  list-style-type: none;
+}
 
 .table__heading_theme_dark {
   color: white;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 1.15;
-  margin-bottom: 20px;
-  margin-top: 0px;
-  position: relative;
 }
 
 .table__text_theme_dark {
   color: white;
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 1.2;
-  margin: 0;
-  position: relative;
+  margin: 0px;
 }
 
 .section-title_theme_dark {
   color: white;
-  font-size: 60px;
-  font-weight: bold;
-  line-height: 69px;
   margin: 90px auto auto auto;
-  position: relative;
-  text-align: center;
-  width: 60%;
-  z-index: 1;
 }
 
 .section-subtitle_theme_dark {
   color: white;
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 34px;
   margin: 20px auto 0 auto;
-  padding-bottom: 0;
-  position: relative;
-  text-align: center;
-  width: 60%;
-  z-index: 1;
 }
 
+/**/
 .footer {
   background-color: #1f1f1f;
   color: white;
